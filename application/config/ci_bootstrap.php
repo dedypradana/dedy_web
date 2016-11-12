@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config['ci_bootstrap'] = array(
     // Site name
-    'site_name' => 'CI Bootstrap 3',
+    'site_name' => 'Dedy Pradana Website',
     // Default page title prefix
     'page_title_prefix' => '',
     // Default page title
