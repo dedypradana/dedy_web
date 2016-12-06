@@ -111,7 +111,7 @@ class Admin_Controller extends MY_Controller {
 
 	// Initialize CRUD album via Image CRUD library
 	// Reference: http://www.grocerycrud.com/image-crud
-	protected function generate_image_crud($table, $url_field, $upload_path, $order_field = 'pos', $title_field = '')
+	protected function generate_image_crud($table, $url_field, $upload_path, $order_field = '', $title_field = '')
 	{
 		// create CRUD object
 		$this->load->library('Image_crud');

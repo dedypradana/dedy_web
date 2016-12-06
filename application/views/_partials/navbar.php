@@ -1,16 +1,31 @@
-<header id="header" class="narrow" data-plugin-options='{"alwaysStickyEnabled": true, "stickyEnabled": true, "stickyWithGap": false, "stickyChangeLogoSize": false}'>
+<header id="header">
     <div class="container">
         <div class="logo">
-            <a href="<?php echo base_url(); ?>">
-                <img alt="Porto" width="82" height="40" src="<?php echo base_url(); ?>assets/frontend/img/logo.png">
+            <a href="<?php echo base_url();?>">
+                <img alt="Porto" width="250" height="90" data-sticky-width="180" data-sticky-height="50" src="<?php echo base_url(); ?>assets/frontend/img/logo.png">
             </a>
         </div>
+        <nav>
+            <ul class="nav nav-pills nav-top">
+                <li>
+                    <a href="<?php echo base_url('contact');?>"><i class="fa fa-angle-right"></i>Contact Us</a>
+                </li>
+                <li class="phone">
+                    <span><i class="fa fa-phone"></i>+62 857 2000 4220</span>
+                </li>
+            </ul>
+        </nav>
         <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
             <i class="fa fa-bars"></i>
         </button>
     </div>
     <div class="navbar-collapse nav-main-collapse collapse">
         <div class="container">
+            <ul class="social-icons">
+                <li class="facebook"><a href="<?php echo @$sosmed['facebook']?>" target="_blank" title="Facebook">Facebook</a></li>
+                <li class="instagram"><a href="<?php echo @$sosmed['instagram']?>" target="_blank" title="Instagram">Instagram</a></li>
+                <li class="linkedin"><a href="<?php echo @$sosmed['linkedin']?>" target="_blank" title="Linkedin">Linkedin</a></li>
+            </ul>
             <nav class="nav-main mega-menu">
                 <ul class="nav nav-pills nav-main" id="mainMenu">
                     <?php foreach ($menu as $parent => $parent_params): ?>

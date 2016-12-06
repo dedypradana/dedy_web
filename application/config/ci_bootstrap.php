@@ -22,16 +22,14 @@ $config['ci_bootstrap'] = array(
     'page_title' => '',
     // Default meta data
     'meta_data' => array(
-        'author' => '',
-        'description' => '',
-        'keywords' => ''
+        'author' => 'Dedy Pradana',
+        'description' => 'Visit my website dedy pradana',
+        'keywords' => 'Personal Website'
     ),
     // Default scripts to embed at page head or end
     'scripts' => array(
         'head' => array(
             'assets/frontend/vendor/modernizr/modernizr.js',
-        ),
-        'foot' => array(
             'assets/frontend/vendor/jquery/jquery.js',
             'assets/frontend/vendor/jquery.appear/jquery.appear.js',
             'assets/frontend/vendor/jquery.easing/jquery.easing.js',
@@ -47,6 +45,7 @@ $config['ci_bootstrap'] = array(
             'assets/frontend/vendor/jflickrfeed/jflickrfeed.js',
             'assets/frontend/vendor/magnific-popup/jquery.magnific-popup.js',
             'assets/frontend/vendor/vide/vide.js',
+            'assets/frontend/vendor/highlight/highlight.pack.js',
             'assets/frontend/js/theme.js',
             'assets/frontend/vendor/rs-plugin/js/jquery.themepunch.tools.min.js',
             'assets/frontend/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js',
@@ -54,6 +53,8 @@ $config['ci_bootstrap'] = array(
             'assets/frontend/js/views/view.home.js',
             'assets/frontend/js/custom.js',
             'assets/frontend/js/theme.init.js',
+        ),
+        'foot' => array(
         ),
     ),
     // Default stylesheets to embed at page head
@@ -72,6 +73,7 @@ $config['ci_bootstrap'] = array(
             'assets/frontend/css/theme-shop.css',
             'assets/frontend/css/theme-animate.css',
             //Current Page CSS
+            'assets/frontend/vendor/highlight/styles/atom-one-dark.css',
             'assets/frontend/vendor/rs-plugin/css/settings.css',
             'assets/frontend/vendor/circle-flip-slideshow/css/component.css',
             //Skin CSS
@@ -81,29 +83,14 @@ $config['ci_bootstrap'] = array(
     ),
     // Default CSS class for <body> tag
     'body_class' => '',
+    // Sosial Media
+    'sosmed' => array(
+        'facebook' => 'https://web.facebook.com/dedy.pradana.3',
+        'instagram' => 'https://www.instagram.com/dedypradana/',
+        'linkedin' => 'https://id.linkedin.com/in/dedy-pradana-8389a33b',
+        ),
     // Multilingual settings
-    'languages' => array(
-//        'default' => 'en',
-//        'autoload' => array('general'),
-//        'available' => array(
-//            'en' => array(
-//                'label' => 'English',
-//                'value' => 'english'
-//            ),
-//            'zh' => array(
-//                'label' => '繁體中文',
-//                'value' => 'traditional-chinese'
-//            ),
-//            'cn' => array(
-//                'label' => '简体中文',
-//                'value' => 'simplified-chinese'
-//            ),
-//            'es' => array(
-//                'label' => 'Español',
-//                'value' => 'spanish'
-//            )
-//        )
-    ),
+    'languages' => array(),
     // Google Analytics User ID
     'ga_id' => '',
     // Menu items
@@ -111,6 +98,26 @@ $config['ci_bootstrap'] = array(
         'home' => array(
             'name' => 'Home',
             'url' => '',
+        ),
+        'blog' => array(
+            'name' => 'Blog',
+            'url' => 'blog',
+        ),
+        'services' => array(
+            'name' => 'Services',
+            'url' => 'service',
+        ),
+        'about' => array(
+            'name' => 'About',
+            'url' => 'about',
+        ),
+        'portfolio' => array(
+            'name' => 'Portfolio',
+            'url' => 'portfolio',
+        ),
+        'contact' => array(
+            'name' => 'Contact',
+            'url' => 'contact',
         ),
     ),
     // Login page

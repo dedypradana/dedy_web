@@ -56,6 +56,41 @@ $config['ci_bootstrap'] = array(
             'url' => '',
             'icon' => 'fa fa-home',
         ),
+        'frontend' => array(
+            'name' => 'Frontend',
+            'url' => 'frontend',
+            'icon' => 'fa fa-file-text',
+            'children' => array(
+                'Home' => 'frontend/home',
+                'Service' => 'frontend/service',
+                'About' => 'frontend/about',
+                'Contact' => 'frontend/contact',
+            )
+        ),
+        'portfolio' => array(
+            'name' => 'Portfolio',
+            'url' => 'portfolio',
+            'icon' => 'fa fa-tasks',
+            'children' => array(
+                'Category' => 'portfolio/category',
+                'Skills' => 'portfolio/skill',
+                'Client' => 'portfolio/client',
+                'Content' => 'portfolio/content',
+            )
+        ),
+        'blog' => array(
+            'name' => 'Blog',
+            'url' => 'blog',
+            'icon' => 'fa fa-book',
+            'children' => array(
+                'Category' => 'blog/category',
+                'Tags' => 'blog/tag',
+                'Media' => 'blog/media',
+                'Post' => 'blog/post',
+                'Comment' => 'blog/comment',
+                'Comment Reply' => 'blog/comment_reply',
+            )
+        ),
         'user' => array(
             'name' => 'Users',
             'url' => 'user',

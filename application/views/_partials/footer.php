@@ -1,13 +1,13 @@
-<footer id="footer">
+<footer id="footer" class="color">
     <div class="container">
         <div class="row">
             <div class="footer-ribbon">
                 <span>Get in Touch</span>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <div class="newsletter">
                     <h4>Newsletter</h4>
-                    <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+                    <p>Keep up on our always evolving product features and technology.</p>
 
                     <div class="alert alert-success hidden" id="newsletterSuccess">
                         <strong>Success!</strong> You've been added to our email list.
@@ -25,19 +25,13 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-3">
-                <h4>Latest Tweets</h4>
-                <div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "", "count": 2}'>
-                    <p>Please wait...</p>
-                </div>
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="contact-details">
                     <h4>Contact Us</h4>
                     <ul class="contact">
-                        <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</p></li>
-                        <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-7890</p></li>
-                        <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p></li>
+                        <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> Jl. Dinoyo Permai 174 A, Malang, Jawa Timur</p></li>
+                        <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> +62 857 2000 4220</p></li>
+                        <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:dedy@pradana.net">dedy@pradana.net</a></p></li>
                     </ul>
                 </div>
             </div>
@@ -45,9 +39,9 @@
                 <h4>Follow Us</h4>
                 <div class="social-icons">
                     <ul class="social-icons">
-                        <li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" data-tooltip title="Facebook">Facebook</a></li>
-                        <li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" data-tooltip title="Twitter">Twitter</a></li>
-                        <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" data-tooltip title="Linkedin">Linkedin</a></li>
+                        <li class="facebook"><a href="<?php echo @$sosmed['facebook']?>" target="_blank" title="Facebook">Facebook</a></li>
+                        <li class="instagram"><a href="<?php echo @$sosmed['instagram']?>" target="_blank" title="Instagram">Instagram</a></li>
+                        <li class="linkedin"><a href="<?php echo @$sosmed['linkedin']?>" target="_blank" title="Linkedin">Linkedin</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +51,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <p>© Copyright 2015. All Rights Reserved.</p>
+                    <p>© Copyright <?php echo date('Y'); ?> Dedy Pradana. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

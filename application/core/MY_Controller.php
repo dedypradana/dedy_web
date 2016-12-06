@@ -28,6 +28,7 @@ class MY_Controller extends MX_Controller {
 	protected $mBodyClass = '';
 	protected $mMenu = array();
 	protected $mBreadcrumb = array();
+	protected $mSosmed = array();
 
 	// Multilingual
 	protected $mMultilingual = FALSE;
@@ -74,6 +75,7 @@ class MY_Controller extends MX_Controller {
 		$this->mScripts = empty($config['scripts']) ? array() : $config['scripts'];
 		$this->mStylesheets = empty($config['stylesheets']) ? array() : $config['stylesheets'];
 		$this->mPageAuth = empty($config['page_auth']) ? array() : $config['page_auth'];
+                $this->mSosmed = empty($config['sosmed']) ? array() : $config['sosmed'];
 
 		// multilingual setup
 		$lang_config = empty($config['languages']) ? array() : $config['languages'];
@@ -209,6 +211,7 @@ class MY_Controller extends MX_Controller {
 		$this->mViewData['scripts'] = $this->mScripts;
 		$this->mViewData['stylesheets'] = $this->mStylesheets;
 		$this->mViewData['page_auth'] = $this->mPageAuth;
+		$this->mViewData['sosmed'] = $this->mSosmed;
 
 		$this->mViewData['base_url'] = $this->mBaseUrl;
 		$this->mViewData['menu'] = $this->mMenu;

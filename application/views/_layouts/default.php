@@ -16,8 +16,6 @@
             </div>
         </section>
     </div>
-    <div class="container">
-        <?php $this->load->view($inner_view); ?>
-    </div>
+    <?php $this->load->view($inner_view); ?>
     <?php $this->load->view('_partials/footer'); ?>
 </div>

@@ -11,7 +11,10 @@ body {
 	line-height: 22px;
 	margin: 0;
 }
-
+.title_font {
+        font-family: Impact, Charcoal, sans-serif;
+        font-size: 14px;
+}
 /* Responsive */
 @media (max-width: 479px) {
 	body {
